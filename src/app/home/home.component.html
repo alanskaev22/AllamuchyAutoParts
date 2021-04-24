@@ -1,0 +1,96 @@
+<main role="main" class="container">
+
+    <div class="centerWrap">
+        <br>
+        <h1 class="mt-5" id="main">{{ welcome }} </h1>
+        <p class="lead">Allamuchy Auto Parts specializes in late model car parts. We have thousands of used auto parts
+            in
+            stock, as well as discounted new OEM and aftermarket parts.</p>
+        <br>
+        <address>
+            77 Gibbs Rd <br> Andover, NJ, US 07821<br>
+            <a href="tel:(908) 852-7444">(908) 852-7444</a>
+        </address>
+        <br>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal">
+            View Hours Of Operation <i class="fa fa-clock-o"></i>
+        </button>
+    </div>
+    <br>
+
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Hours of operation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>8am - 5pm</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>8am - 5pm</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>8am - 5pm</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>8am - 5pm</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>8am - 5pm</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>8am - 5pm</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="centerWrap">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/background_img.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/carousel_image.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/carousel_image_3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+</main>
