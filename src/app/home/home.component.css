@@ -3,7 +3,11 @@ main {
 }
 
 .centerWrap {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 a {
@@ -28,4 +32,15 @@ button {
 
 .content {
     padding-top: 40px;
+}
+
+.introText {
+    max-width: 60ch;
+    text-align: center;
+    color: rgb(90, 90, 90);
+}
+
+address {
+    text-align: center;
+    color: rgb(90, 90, 90);
 }
