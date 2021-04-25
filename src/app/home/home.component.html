@@ -3,14 +3,17 @@
     <div class="centerWrap">
         <br>
         <h1 class="mt-5" id="main">{{ welcome }} </h1>
-        <p class="lead">Allamuchy Auto Parts specializes in late model car parts. We have thousands of used auto parts
-            in
-            stock, as well as discounted new OEM and aftermarket parts.</p>
+        <p class="lead">Allamuchy Auto Parts specializes in late model car parts. We have thousands of used auto parts in stock, as well as discounted new OEM and aftermarket parts.</p>
         <br>
+
         <address>
             77 Gibbs Rd <br> Andover, NJ, US 07821<br>
             <a href="tel:(908) 852-7444">(908) 852-7444</a>
         </address>
+
+        <button class="btn btn-outline-success" [routerLink]="['/browse-parts']">
+            Browse Parts <i class="fas fa-car-crash"></i>
+        </button>
         <br>
         <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal">
             View Hours Of Operation <i class="fa fa-clock-o"></i>
@@ -80,17 +83,19 @@
                     <img src="/assets/carousel_image_3.png" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
 
+
+        <div class="content">
+            <h2>More content</h2>
+        </div>
     </div>
 </main>

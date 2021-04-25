@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  pageTitle = 'Allamuchy Auto Parts';
-  currentYear: number = new Date().getFullYear();
+
   welcome = "Welcome to Allamuchy Auto Parts";
 }
 

@@ -1,36 +1,11 @@
+<div class="body">
+    <div class="flex-wrapper">
 
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #2a3a4d;">
-      <div class="container">
-        <a class="navbar-brand mb-0 h1" href="#">{{pageTitle}}</a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" [routerLink]="['/home']">Home</a>
-            <a class="nav-link" [routerLink]="['/browse-parts']">Browse Parts</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Contact </a>
-          </div>
+        <app-header></app-header>
+        <div class="container">
+            <router-outlet></router-outlet>
         </div>
-      </div>
-    </nav>
-  </header>
 
-<div class="flex-wrapper">
-  <div class="container">
-    <router-outlet></router-outlet>
-
-  </div>
-
-  <footer class="footer">
-
-      <p>&copy;{{currentYear}} Allamuchy Auto Parts</p>
-      <p>Designed by <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alan-s-961284a7/"
-          class="effect-underline">Alan Skaev</a></p>
-
-  </footer>
-  </div>
+    </div>
+    <app-footer></app-footer>
+</div>

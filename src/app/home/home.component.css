@@ -1,9 +1,8 @@
-
-main{
+main {
     padding-bottom: 2.5rem;
 }
 
-.centerWrap{
+.centerWrap {
     text-align: center;
 }
 
@@ -11,7 +10,7 @@ a {
     text-decoration: none;
 }
 
-.carousel{
+.carousel {
     align-content: center;
     max-width: 100%;
     height: 40%;
@@ -20,5 +19,13 @@ a {
 }
 
 .carousel-item {
-    height: 750px;
-  }
+    max-height: 700px;
+}
+
+button {
+    margin: 10px;
+}
+
+.content {
+    padding-top: 40px;
+}
