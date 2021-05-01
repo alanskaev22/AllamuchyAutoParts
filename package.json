@@ -31,7 +31,6 @@
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
   },
-  
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.1102.10",
     "@types/jasmine": "~3.6.0",
