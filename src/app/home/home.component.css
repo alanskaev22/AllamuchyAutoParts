@@ -38,6 +38,7 @@ button {
     max-width: 60ch;
     text-align: center;
     color: rgb(90, 90, 90);
+    margin-top: 1em;
 }
 
 address {
