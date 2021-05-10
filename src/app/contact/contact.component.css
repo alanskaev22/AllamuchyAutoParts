@@ -1,19 +1,63 @@
 form{
     max-width: 600px;
+    margin-top: 5%;
 }
 
 .form-control.ng-invalid.ng-dirty{
     border-style: solid;
     border-color: red;
 }
-/* 
-.required::after {
-content: " *";
-} */
 
 .comment {
     min-width: 100%;
 }
-table td {
-    padding-right: 30px;
+
+.subtitle {
+    margin-top: 1em;
+    padding-left: 20px;
+}
+
+button{
+    margin:20px;
+}
+
+mat-form-field{
+    padding: 20px;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    mat-form-field, div[mat-form-field] {
+        width: 100%;
+        margin: 0;
+        padding: 1em;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    mat-form-field, div[mat-form-field] {
+        width: 100%;
+        margin: 0;
+        padding: 1em;
+    }
 }
