@@ -41,9 +41,15 @@ button {
     margin-top: 1em;
 }
 
+address a {
+    text-decoration: none;
+    color: inherit;
+}
+
 address {
     text-align: center;
     color: rgb(90, 90, 90);
+    font-size: 1.2rem;
 }
 
 #welcome {
