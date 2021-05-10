@@ -1,0 +1,19 @@
+form{
+    max-width: 600px;
+}
+
+.form-control.ng-invalid.ng-dirty{
+    border-style: solid;
+    border-color: red;
+}
+/* 
+.required::after {
+content: " *";
+} */
+
+.comment {
+    min-width: 100%;
+}
+table td {
+    padding-right: 30px;
+}
