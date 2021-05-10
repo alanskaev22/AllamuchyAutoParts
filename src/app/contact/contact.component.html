@@ -1,44 +1,42 @@
-<div>
-    <h2>Contact Page Works</h2>
-</div>
-
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
 
-<table cellspacing="10">
-    <tr>
-        <td>
-            <mat-form-field> 
-                <mat-label>First name</mat-label>
-                <input matInput formControlName="firstName" maxlength="15" required>
-                    <mat-error *ngIf="firstName?.touched && firstName?.errors?.required">First name is required</mat-error>
-            </mat-form-field>
-        </td>
-        <td>
-            <mat-form-field> 
-                <mat-label>Last name</mat-label>
-                <input type="text" matInput formControlName="lastName" maxlength="15" placeholder="John" required>
+    <table cellspacing="10">
+        <tr>
+            <td>
+                <mat-form-field>
+                    <mat-label>First name</mat-label>
+                    <input matInput formControlName="firstName" maxlength="15" required>
+                    <mat-error *ngIf="firstName?.touched && firstName?.errors?.required">First name is required
+                    </mat-error>
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field>
+                    <mat-label>Last name</mat-label>
+                    <input type="text" matInput formControlName="lastName" maxlength="15" placeholder="John" required>
                     <mat-error *ngIf="lastName?.touched && lastName?.invalid">Last Name name is required</mat-error>
-            </mat-form-field>
-        </td>
-    </tr>
-</table>
-<mat-form-field class="example-full-width">
-    <mat-label>Email</mat-label>
-    <input type="email" formControlName="email" matInput placeholder="Ex. pat@example.com" required>
-    <mat-error *ngIf="email?.hasError('email') && !email?.hasError('required')">
-      Please enter a valid email address
-    </mat-error>
-    <mat-error *ngIf="email?.hasError('required')">
-      Email is <strong>required</strong>
-    </mat-error>
-  </mat-form-field>
-<div>
-    <mat-form-field class="comment">
-        <mat-label>Leave a comment</mat-label>
-        <textarea matInput formControlName="comment" #comment maxlength="250" rows="4" placeholder="Ex. Quality of your parts..." required></textarea>
-        <mat-hint align="end">{{ comment.value.length }} / 250</mat-hint>
-      </mat-form-field>
-</div>
+                </mat-form-field>
+            </td>
+        </tr>
+    </table>
+    <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input type="email" formControlName="email" matInput placeholder="Ex. pat@example.com" required>
+        <mat-error *ngIf="email?.hasError('email') && !email?.hasError('required')">
+            Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="email?.hasError('required')">
+            Email is <strong>required</strong>
+        </mat-error>
+    </mat-form-field>
+    <div>
+        <mat-form-field class="comment">
+            <mat-label>Leave a comment</mat-label>
+            <textarea matInput formControlName="comment" #comment maxlength="250" rows="4"
+                placeholder="Ex. Quality of your parts..." required></textarea>
+            <mat-hint align="end">{{ comment.value.length }} / 250</mat-hint>
+        </mat-form-field>
+    </div>
 
     <button [disabled]="contactForm.invalid" type="submit" mat-raised-button color="primary">Submit</button>
 </form>
