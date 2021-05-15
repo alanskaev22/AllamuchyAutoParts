@@ -11,10 +11,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   contactForm: FormGroup = new FormGroup({});
-
+  
   constructor(private fb: FormBuilder) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.contactForm = this.fb.group({
       firstName: ['', [
         Validators.required,
