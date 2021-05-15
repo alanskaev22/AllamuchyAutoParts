@@ -1,6 +1,6 @@
 <main role="main" class="container">
 
-    <div class="centerWrap">
+    <section class="centerWrap">
         <br>
         <h1 class="mt-5" id="welcome">{{ welcome }} </h1>
         <p class="lead introText">Allamuchy Auto Parts specializes in late model car parts. We have thousands of used auto parts in stock, as well as discounted new OEM and aftermarket parts.</p>
@@ -14,14 +14,14 @@
             <a href="tel:(908) 852-7444">(908) 852-7444</a>
         </address>
 
-        <button class="btn btn-outline-success" [routerLink]="['/browse-parts']">
+        <button  mat-raised-button color="primary" [routerLink]="['/browse-parts']">
             Browse Parts <i class="fas fa-car-crash"></i>
         </button>
         <br>
-        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal">
+        <button type="button"  mat-raised-button data-bs-toggle="modal" data-bs-target="#modal">
             View Hours Of Operation <i class="fa fa-clock-o"></i>
         </button>
-    </div>
+    </section>
     <br>
 
     <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
@@ -72,7 +72,7 @@
         </div>
     </div>
 
-    <div class="centerWrap">
+    <section class="centerWrap">
 
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
             <div class="carousel-inner">
@@ -100,5 +100,5 @@
         <div class="content">
             <h2>More content coming soon ...</h2>
         </div>
-    </div>
+    </section>
 </main>
