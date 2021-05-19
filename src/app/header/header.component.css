@@ -1,3 +1,23 @@
 .navbar-brand {
     font-size: 2em;
 }
+
+.navbar-brand{
+    font-size: 3em;
+    color: rgb(211, 235, 255);
+    transition: transform .4s
+}
+.navbar-brand:hover{
+    color: rgb(211, 235, 255);
+    transform: scale(1.1);
+}
+
+.nav-link{
+    font-size: 1.3em;
+    transition: transform .4s
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+    color: white
+}
