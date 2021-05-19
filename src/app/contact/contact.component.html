@@ -1,7 +1,10 @@
-<div class="contactPage">
-<h1 class="subtitle">Leave us a comment</h1>
+<div>
+    <h1 class="subtitle">Leave us a comment</h1>
+<div class="contactPage" fxLayout="flex" fxLayoutAlign="center center" >
 
-<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+<mat-card class="form-card" >
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
 
     <mat-form-field>
         <mat-label>First name</mat-label>
@@ -13,7 +16,7 @@
     <mat-form-field>
         <mat-label>Last name</mat-label>
         <input type="text" matInput formControlName="lastName" maxlength="15" placeholder="John" required>
-        <mat-error *ngIf="lastName?.touched && lastName?.invalid">Last Name name is required</mat-error>
+        <mat-error *ngIf="lastName?.touched && lastName?.invalid">Last Name is required</mat-error>
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
@@ -32,9 +35,13 @@
             <textarea matInput formControlName="comment" #comment maxlength="250" rows="4"
                 placeholder="Ex. Quality of your parts..." required></textarea>
             <mat-hint align="end">{{ comment.value.length }} / 250</mat-hint>
+            <mat-error>Comment must be at least 10 characters</mat-error>
         </mat-form-field>
 
-
+    <mat-card-actions>
     <button [disabled]="contactForm.invalid" type="submit" mat-raised-button color="primary">Submit</button>
+    </mat-card-actions>
 </form>
+</mat-card>
+</div>
 </div>

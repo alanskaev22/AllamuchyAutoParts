@@ -24,7 +24,13 @@ button{
 mat-form-field{
     padding: 20px;
 }
+.form-card{
+    max-width: 800px;
+}
 
+h1{
+    text-align: center;
+}
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 

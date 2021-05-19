@@ -43,3 +43,14 @@ a.effect-underline:hover:after {
 footer {
     padding-top: 10px;
 }
+
+.fab {
+    margin: 0 10px;
+    transition: transform .4s
+}
+.fa-ebay{
+    font-size: 1.8em;
+}
+.fab:hover{
+    transform: scale(1.8);
+}

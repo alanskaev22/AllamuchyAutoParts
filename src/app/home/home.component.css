@@ -12,6 +12,17 @@ main {
 
 a {
     text-decoration: none;
+    color:rgba(0,0,0,.87);
+}
+button{
+    font-size: 1.5em;
+}
+button i {
+    margin: 0 5px;
+}
+
+.fa-ebay{
+    color: black;
 }
 
 .carousel {
@@ -39,6 +50,8 @@ button {
     text-align: center;
     color: rgb(90, 90, 90);
     margin-top: 1em;
+    font-size: 2em;
+    line-height: 1.3em;
 }
 
 address a {
@@ -49,7 +62,7 @@ address a {
 address {
     text-align: center;
     color: #2a3a4d;
-    font-size: 1.2rem;
+    font-size: 1.3em;
 }
 
 #welcome {

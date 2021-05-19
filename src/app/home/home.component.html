@@ -3,23 +3,28 @@
     <section class="centerWrap">
         <br>
         <h1 class="mt-5" id="welcome">{{ welcome }} </h1>
-        <p class="lead introText">Allamuchy Auto Parts specializes in late model car parts. We have thousands of used auto parts in stock, as well as discounted new OEM and aftermarket parts.</p>
+        <p class="lead introText">Allamuchy Auto Parts specializes in late model car parts. We have thousands of used
+            auto parts in stock, as well as discounted new OEM and aftermarket parts.</p>
         <br>
 
         <address>
             <a href="http://maps.google.com/?q=77 Gibbs Rd, Andover, NJ, US 07821">
-            77 Gibbs Rd <br> Andover, NJ, US 07821<br>
+                77 Gibbs Rd <br> Andover, NJ, US 07821<br>
             </a>
             <br>
             <a href="tel:(908) 852-7444">(908) 852-7444</a>
         </address>
 
-        <button  mat-raised-button color="primary" [routerLink]="['/browse-parts']">
-            Browse Parts <i class="fas fa-car-crash"></i>
+        <button mat-raised-button color="primary" [routerLink]="['/browse-parts']">
+            Browse Parts <i class="fas fa-car-crash fa-lg"></i>
         </button>
         <br>
-        <button type="button"  mat-raised-button data-bs-toggle="modal" data-bs-target="#modal">
-            View Hours Of Operation <i class="fa fa-clock-o"></i>
+
+        <a href="https://www.ebay.com/usr/allamuchyparts" target="_blank">
+            <button mat-stroked-button color="primary">Browse eBay Store <i class="fab fa-ebay fa-2x"></i></button> </a> 
+        <br>
+        <button mat-stroked-button data-bs-toggle="modal" data-bs-target="#modal">
+            View Hours Of Operation <i class="fa fa-clock-o fa-lg"></i>
         </button>
     </section>
     <br>
@@ -86,11 +91,13 @@
                     <img src="/assets/carousel_image_3.png" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
