@@ -31,6 +31,7 @@ mat-form-field{
 h1{
     text-align: center;
 }
+
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -47,6 +48,9 @@ h1{
         width: 100%;
         margin: 0;
         padding: 1em;
+    }
+    .form-card{
+        width:100%
     }
 }
 
@@ -65,5 +69,8 @@ h1{
         width: 100%;
         margin: 0;
         padding: 1em;
+    }
+    .form-card{
+        width:100%
     }
 }
