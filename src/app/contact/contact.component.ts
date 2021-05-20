@@ -51,8 +51,5 @@ export class ContactComponent implements OnInit {
   get email() {
     return this.contactForm.get('email');
   }
-  onSubmit(){
-    console.log(this.contactForm);
-  }
 
 }
