@@ -4,7 +4,7 @@
 
 <mat-card class="form-card" >
 
-    <form [formGroup]="contactForm" novalidate>
+    <form [formGroup]="contactForm" #formDirective="ngForm" (ngSubmit)='onSubmit(contactForm.value, formDirective)' novalidate>
 
     <mat-form-field>
         <mat-label>First name</mat-label>
@@ -18,7 +18,6 @@
         <input type="text" matInput formControlName="lastName" maxlength="15" placeholder="John" required>
         <mat-error *ngIf="lastName?.touched && lastName?.invalid">Last Name is required</mat-error>
     </mat-form-field>
-
     <mat-form-field>
         <mat-label>Email</mat-label>
         <input type="email" formControlName="email" matInput placeholder="Ex. pat@example.com" required>
@@ -40,8 +39,12 @@
 
     <mat-card-actions>
     <button [disabled]="contactForm.invalid" type="submit" mat-raised-button color="primary">Submit</button>
-    </mat-card-actions>
+</mat-card-actions>
 </form>
+<div fxLayout="column" fxLayoutAlign="none center" *ngIf="loading">
+    <mat-spinner></mat-spinner>
+    
+</div>
 </mat-card>
 </div>
 </div>

@@ -7,4 +7,17 @@ html, body {
     overflow-x: hidden;
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    border:0;
+}
+
+#cdk-overlay-0{
+transform: translateY(-80vh);
+
+
+}
+.snackbar-style {
+    display: block;
+    background-color: #b0bd96;
+    color: black;
 }
