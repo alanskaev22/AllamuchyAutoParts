@@ -23,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { PartCardComponent } from './part-card/part-card.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 
@@ -52,7 +53,8 @@ import { PartCardComponent } from './part-card/part-card.component';
     MatCardModule,
     HttpClientModule,
     MatSnackBarModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

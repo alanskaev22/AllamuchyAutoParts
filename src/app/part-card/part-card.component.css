@@ -1,3 +1,21 @@
 #part-card {
     min-width: 25%;
+    padding: 0;
 }
+
+mat-card-content {
+    margin: 0;
+}
+mat-card-title, mat-card-subtitle{
+    padding: 0 5px;
+}
+
+mat-card-title{
+    font-size: 1.2em;
+}
+
+button{
+    transform: translateX(150px);
+    color: rgb(80, 168, 80);
+}
+

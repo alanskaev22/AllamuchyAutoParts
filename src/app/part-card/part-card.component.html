@@ -1,10 +1,39 @@
 <mat-card id="part-card">
 
     <mat-card-content>
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img mat-card-image src="https://picsum.photos/200">
+                </div>
+                <div class="carousel-item">
+                    <img mat-card-image src="https://picsum.photos/200">
+                </div>
+                <div class="carousel-item">
+                    <img mat-card-image src="https://picsum.photos/200">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </mat-card-content>
+
     <mat-card-title>
-        2018 BMW 328I Throttle Body
-    </mat-card-title>
-    <mat-card-subtitle>$50.00</mat-card-subtitle>
+        HYBRID BATTERY HIGH VOLTAGE ASSEMBLY 2.0L Fits 18-19 HONDA ACCORD 30852 </mat-card-title>
+    <mat-card-subtitle>
+        <span>{{ 50| currency}}</span>
+        <button mat-icon-button>
+            <mat-icon matTooltip="Add to cart" matTooltipPosition="left">
+                <i class="fas fa-cart-plus"></i>
+            </mat-icon>
+        </button>
+    </mat-card-subtitle>
 </mat-card>
