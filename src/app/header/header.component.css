@@ -1,9 +1,5 @@
-.navbar-brand {
-    font-size: 2em;
-}
-
 .navbar-brand{
-    font-size: 3em;
+    font-size: min(5vw, 36px);
     transition: transform .4s
 }
 .navbar-brand:hover{
