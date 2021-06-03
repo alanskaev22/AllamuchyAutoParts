@@ -1,7 +1,7 @@
 <mat-card id="part-card">
 
     <mat-card-content>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+        <div [attr.id]="'carouselExampleControls'+partId" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img mat-card-image src="https://picsum.photos/200">
@@ -13,12 +13,12 @@
                     <img mat-card-image src="https://picsum.photos/200">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carouselExampleControls'+partId"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carouselExampleControls'+partId"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -30,7 +30,7 @@
         HYBRID BATTERY HIGH VOLTAGE ASSEMBLY 2.0L Fits 18-19 HONDA ACCORD 30852 </mat-card-title>
     <mat-card-subtitle>
         <span>{{ 50| currency}}</span>
-        <button mat-icon-button>
+        <button [attr.id]="'add-to-cart add-to-card'+partId" mat-icon-button>
             <mat-icon matTooltip="Add to cart" matTooltipPosition="left">
                 <i class="fas fa-cart-plus"></i>
             </mat-icon>

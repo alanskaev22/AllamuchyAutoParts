@@ -5,20 +5,10 @@
     </div>
     <div id="right" fxLayout="column" fxFlex="80">
         <div class="parts-container" fxLayout="row wrap" fxLayoutGap="10px grid">
-            <app-part-card fxFlex="0 0 25" fxFlex.xs="0 0 100%" fxFlex.sm="0 0 33%"></app-part-card>
-            <app-part-card fxFlex="0 0 25" fxFlex.xs="0 0 100%" fxFlex.sm="0 0 33%"></app-part-card>
-            <app-part-card fxFlex="0 0 25" fxFlex.xs="0 0 100%" fxFlex.sm="0 0 33%"></app-part-card>
-            <app-part-card fxFlex="0 0 25" fxFlex.xs="0 0 100%" fxFlex.sm="0 0 33%"></app-part-card>
-            <app-part-card fxFlex="0 0 25" fxFlex.xs="0 0 100%" fxFlex.sm="0 0 33%"></app-part-card>
-            <app-part-card fxFlex="0 0 25" fxFlex.xs="0 0 100%" fxFlex.sm="0 0 33%"></app-part-card>
-            <app-part-card fxFlex="0 0 25" fxFlex.xs="0 0 100%" fxFlex.sm="0 0 33%"></app-part-card>
-            <app-part-card fxFlex="0 0 25" fxFlex.xs="0 0 100%" fxFlex.sm="0 0 33%"></app-part-card>
-            <app-part-card fxFlex="0 0 25" fxFlex.xs="0 0 100%" fxFlex.sm="0 0 33%"></app-part-card>
-            <app-part-card fxFlex="0 0 25" fxFlex.xs="0 0 100%" fxFlex.sm="0 0 33%"></app-part-card>
-            <app-part-card fxFlex="0 0 25" fxFlex.xs="0 0 100%" fxFlex.sm="0 0 33%"></app-part-card>
-            <app-part-card fxFlex="0 0 25" fxFlex.xs="0 0 100%" fxFlex.sm="0 0 33%"></app-part-card>
-            <app-part-card fxFlex="0 0 25" fxFlex.xs="0 0 100%" fxFlex.sm="0 0 33%"></app-part-card>
+            <app-part-card fxFlex="0 0 25" fxFlex.xs="0 0 100%" fxFlex.sm="0 0 33%"
+            *ngFor="let part of [1,2,3,4,5]" [partId]="part">
 
+            </app-part-card>
         </div>
     </div>
 </div>

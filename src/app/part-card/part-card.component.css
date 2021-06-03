@@ -14,7 +14,7 @@ mat-card-title{
     font-size: 1.2em;
 }
 
-button{
+button[id*='add-to-cart'] {
     transform: translateX(150px);
     color: rgb(80, 168, 80);
 }
